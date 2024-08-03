@@ -1,3 +1,4 @@
+import Communities from "@/components/communities/communities";
 import HowToBuy from "@/components/how-to-buy/how-to-buy";
 import UsagiStory from "@/components/usagi-story/story";
 import Welcome from "@/components/welcome/welcome";
@@ -12,6 +13,7 @@ export default function Home() {
       bg-[url('/images/background.png')] bg-opacity-[0.08] bg-blend-exclusion h-[2009px]"
       >
         <HowToBuy />
+        <Communities />
       </div>
     </main>
   );

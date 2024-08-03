@@ -22,7 +22,7 @@ export default function HowToBuy() {
         className="absolute top-[-161.11px] left-[33px]"
       />
 
-      {/* Guide */}
+      {/* guide */}
       <div className="w-full flex justify-end">
         <div className="mt-12 mr-[116.24px] relative w-full max-w-[590px] flex flex-col gap-8 justify-start items-start">
           <p className="w-full font-nuku text-[48px] leading-[56px]">
@@ -40,6 +40,7 @@ export default function HowToBuy() {
                 width={620}
                 className="absolute z-[-10] left-[-25px]"
               />
+              {/* address */}
               <p className="text-[20px] leading-6 tracking-[-0.4px] font-medium">
                 0x5f0E07dFeE5832Faa00c63F2D33A0D79150E8598
               </p>
@@ -48,6 +49,7 @@ export default function HowToBuy() {
               </button>
             </div>
           </div>
+          {/* steps */}
           <div className="w-full">
             <p className="mb-4 text-[24px] leading-8 font-bold tracking-[-0.48px]">
               Getting Started on USAGI:

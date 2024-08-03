@@ -10,7 +10,7 @@ export default function Home() {
       <Welcome />
       <UsagiStory />
       <div
-        className=" relative w-full max-w-[1440px] flex flex-col items-center bg-[rgba(234,218,203,1)] 
+        className=" relative w-full xl:max-w-[1440px] flex flex-col items-center bg-[rgba(234,218,203,1)] 
       bg-[url('/images/background.png')] bg-opacity-[0.08] bg-blend-exclusion h-[2009px]"
       >
         <HowToBuy />

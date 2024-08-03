@@ -11,7 +11,7 @@ import SocialLinks from "./social-links";
 
 export default function Welcome() {
   return (
-    <section className="w-full flex items-center justify-center max-w-[1440px] bg-[#F4EBE4] relative z-[11]">
+    <section className="w-full flex items-center justify-center xl:max-w-[1440px] bg-[#F4EBE4] relative z-[11]">
       {/* social links */}
       <SocialLinks />
 

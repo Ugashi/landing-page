@@ -37,7 +37,7 @@ export default function Communities() {
               key={community.title}
               className="w-[443px] h-[583px] relative bg-center"
             >
-              {/* community thumbnails */}
+              {/* community thumbnail */}
               <Image src={communitycard} alt="community card" width={443} />
               <Image
                 src={community.img}

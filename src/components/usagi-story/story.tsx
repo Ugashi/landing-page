@@ -38,20 +38,20 @@ export default function UsagiStory() {
           </p>
           <br />
           <p>
-            One evening, Usagi found a village at the jungle's edge, gripped by
-            fear. A young girl tearfully revealed that bandits had kidnapped her
-            brother. Hayate, determined to help, ventured into the forest. He
-            swiftly defeated the bandits, his movements a blur, and rescued the
-            girl's brother.
+            One evening, Usagi found a village at the jungle&apos;s edge,
+            gripped by fear. A young girl tearfully revealed that bandits had
+            kidnapped her brother. Hayate, determined to help, ventured into the
+            forest. He swiftly defeated the bandits, his movements a blur, and
+            rescued the girl&apos;s brother.
           </p>
           <br />
           <p>
-            The villagers, grateful and awestruck, thanked Usagi. "I do what
-            must be done," he replied simply, before disappearing into the
-            forest. Hayate continued his solitary journey, a beacon of hope in a
-            dark world. His legend grew, a timeless tale of bravery and justice.
-            The Sei Usagi's story became part of the jungle, inspiring those who
-            heard it.
+            The villagers, grateful and awestruck, thanked Usagi. &quot;I do
+            what must be done,&quot; he replied simply, before disappearing into
+            the forest. Hayate continued his solitary journey, a beacon of hope
+            in a dark world. His legend grew, a timeless tale of bravery and
+            justice. The Sei Usagi&apos;s story became part of the jungle,
+            inspiring those who heard it.
           </p>
         </div>
       </div>

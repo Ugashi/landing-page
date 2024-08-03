@@ -10,6 +10,8 @@ export default function License() {
       <div className="absolute top-[-119px] w-[558.458px] h-[613.667px] overflow-hidden left-1/2 -translate-x-1/2">
         <Image src={bunny} alt="bunny" height={743} width={558} />
       </div>
+
+      <div className=""></div>
     </div>
   );
 }

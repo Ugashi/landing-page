@@ -6,11 +6,12 @@ import Image from "next/image";
 
 export default function UsagiStory() {
   return (
-    <section className="relative mt-[142px] h-[1316px]  w-full bg-[#FFF] 2xl:max-w-[1440px] flex flex-col items-center">
+    <section className="relative mt-[142px] h-[1316px]  w-full bg-[#FFF] 2xl:max-w-[1440px] flex flex-col items-center overflow-hidden">
       <div className="w-full h-[124.69px] bg-[#161616]"></div>
-      <div className=" relative w-full">
-        <Image src={vector} alt="vector" />
-      </div>
+      {/* half black decorator */}
+      <div className=" relative w-full h-[352.4px] bg-[url('/images/story/vector.png')] bg-cover"></div>
+
+      {/* usagi text background decorator  */}
       <div className="absolute top-[72px] right-[-40px] w-[627px]">
         <Image src={usaight} alt="usaright" />
       </div>

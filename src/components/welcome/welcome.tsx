@@ -16,8 +16,20 @@ export default function Welcome() {
       <SocialLinks />
 
       {/* mountain background */}
-      <div className="flex flex-col items-center">
-        <Image src={mountain} alt="mountain" />
+      <div className="flex flex-col items-center w-full bg-[url('/images/welcome/MONTAIN.png')] bg-cover h-[700px]"></div>
+      {/* grass */}
+      <div className="absolute top-[142px] z-[5] w-full">
+        <div className="w-full bg-[url('/images/welcome/grass.png')] bg-cover h-[700px]"></div>
+        {/* welcome text */}
+        <div className="w-full h-[251.616px] bg-transparent mt-[-1px] pt-[84.69px]">
+          <p className="ml-[120px] max-w-[692px] text-[24px] leading-7 text-[#EADACB] font-nuku">
+            Welcome to Usagi, the meme coin inspired by the playful and
+            adventurous spirit of rabbits! Usagi is more than just a
+            cryptocurrency; it&apos;s a community-driven project that combines
+            the fun of memes with the innovative world of decentralized finance
+            (DeFi).
+          </p>
+        </div>
       </div>
 
       {/* logo */}
@@ -51,21 +63,6 @@ export default function Welcome() {
         alt="cloudright"
         className="absolute z-[9] top-0 right-[27px]"
       />
-
-      {/* grass */}
-      <div className="absolute top-[142px] z-[5]">
-        <Image src={grass} alt="grass" />
-        {/* welcome text */}
-        <div className="w-full h-[251.616px] bg-transparent mt-[-1px] pt-[84.69px]">
-          <p className="ml-[120px] max-w-[692px] text-[24px] leading-7 text-[#EADACB] font-nuku">
-            Welcome to Usagi, the meme coin inspired by the playful and
-            adventurous spirit of rabbits! Usagi is more than just a
-            cryptocurrency; it’s a community-driven project that combines the
-            fun of memes with the innovative world of decentralized finance
-            (DeFi).
-          </p>
-        </div>
-      </div>
     </section>
   );
 }

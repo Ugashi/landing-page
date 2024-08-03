@@ -11,7 +11,7 @@ import SocialLinks from "./social-links";
 
 export default function Welcome() {
   return (
-    <section className="w-full flex items-center justify-center max-w-[1440px] bg-[#F4EBE4] relative">
+    <section className="w-full flex items-center justify-center max-w-[1440px] bg-[#F4EBE4] relative z-[11]">
       {/* social links */}
       <SocialLinks />
 
@@ -55,7 +55,16 @@ export default function Welcome() {
       {/* grass */}
       <div className="absolute top-[142px] z-[5]">
         <Image src={grass} alt="grass" />
-        <div className="w-full h-[251.616px] bg-[#161616] mt-[-1px]"></div>
+        {/* welcome text */}
+        <div className="w-full h-[251.616px] bg-transparent mt-[-1px] pt-[84.69px]">
+          <p className="ml-[120px] max-w-[692px] text-[24px] leading-7 text-[#EADACB]">
+            Welcome to Usagi, the meme coin inspired by the playful and
+            adventurous spirit of rabbits! Usagi is more than just a
+            cryptocurrency; it’s a community-driven project that combines the
+            fun of memes with the innovative world of decentralized finance
+            (DeFi).
+          </p>
+        </div>
       </div>
     </section>
   );

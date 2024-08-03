@@ -25,7 +25,7 @@ export default function UsagiStory() {
 
       {/* story */}
       <div className=" absolute left-[122px] top-[538px] max-w-[520px]">
-        <p className="text-black text-[48px] leading-[56px]">
+        <p className="text-black text-[48px] leading-[56px] font-nuku">
           STORY ABOUT <span className="text-[#9D2117]">USAGI</span>
         </p>
         <div className="mt-8 text-[16px] leading-[24px] tracking-[-0.32px] text-black">

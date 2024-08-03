@@ -57,7 +57,7 @@ export default function Welcome() {
         <Image src={grass} alt="grass" />
         {/* welcome text */}
         <div className="w-full h-[251.616px] bg-transparent mt-[-1px] pt-[84.69px]">
-          <p className="ml-[120px] max-w-[692px] text-[24px] leading-7 text-[#EADACB]">
+          <p className="ml-[120px] max-w-[692px] text-[24px] leading-7 text-[#EADACB] font-nuku">
             Welcome to Usagi, the meme coin inspired by the playful and
             adventurous spirit of rabbits! Usagi is more than just a
             cryptocurrency; it’s a community-driven project that combines the

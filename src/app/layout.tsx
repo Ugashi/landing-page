@@ -1,8 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Jost } from "next/font/google";
+import localFont from "next/font/local";
+
+const nuku = localFont({
+  src: "../../public/fonts/nuku1.ttf",
+  variable: "--font-nuku",
+  display: "swap",
+});
+
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const jost = Jost({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${jost.className} ${nuku.variable}`}>{children}</body>
     </html>
   );
 }

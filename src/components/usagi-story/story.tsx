@@ -1,4 +1,3 @@
-import vector from "@/images/story/vector.png";
 import usaight from "@/images/story/usaright.png";
 import usaleft from "@/images/story/usaleft.png";
 import bunny from "@/images/story/bunny.png";
@@ -6,7 +5,7 @@ import Image from "next/image";
 
 export default function UsagiStory() {
   return (
-    <section className="relative mt-[142px] h-[1316px]  w-full bg-[#FFF] 2xl:max-w-[1440px] flex flex-col items-center overflow-hidden">
+    <section className="relative mt-[-114px] h-[1316px]  w-full bg-[#FFF] 2xl:max-w-[1440px] flex flex-col items-center overflow-hidden z-[4]">
       <div className="w-full h-[124.69px] bg-[#161616]"></div>
       {/* half black decorator */}
       <div className=" relative w-full h-[352.4px] bg-[url('/images/story/vector.png')] bg-cover"></div>

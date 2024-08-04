@@ -25,3 +25,14 @@
 * {
   scroll-behavior: smooth;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.invis-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.invis-scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

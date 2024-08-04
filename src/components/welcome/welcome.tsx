@@ -23,23 +23,18 @@ export default function Welcome() {
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
 
+  // useEffect(() => {
+  //   // Disable scroll
+  //   document.body.style.maxHeight = "100vh";
+  //   document.body.style.overflow = "hidden";
+
+  //   return () => {
+  //     // Re-enable scroll when component unmounts
+  //     document.body.style.overflowY = "scroll";
+  //   };
+  // }, []);
+
   useEffect(() => {
-    // Disable scroll
-    document.body.style.maxHeight = "100vh";
-    document.body.style.overflow = "hidden";
-
-    return () => {
-      // Re-enable scroll when component unmounts
-      document.body.style.overflowY = "scroll";
-    };
-  }, []);
-
-  useEffect(() => {
-    if (isAnimationComplete) {
-      // Re-enable scroll when animation is complete
-      document.body.style.overflowY = "scroll";
-    }
-
     const handleScroll = (event: Event) => {
       setScrollPosition(window.scrollY);
     };
@@ -86,7 +81,7 @@ export default function Welcome() {
   };
 
   return (
-    <section className="w-full flex h-screen items-center justify-center 2xl:max-w-[1440px] bg-[#F4EBE4] relative ">
+    <section className="w-full flex h-screen items-center justify-center 2xl:max-w-[1440px] bg-[#F4EBE4] relative">
       {/* sunrise background */}
       <motion.div
         initial={{ opacity: 0.1 }}
@@ -96,16 +91,18 @@ export default function Welcome() {
       ></motion.div>
 
       {/* mountain background */}
-      <motion.div
-        initial={{ y: "150%" }}
-        animate={{ y: "0%" }}
-        transition={{
-          duration: 1.8,
-          delay: 2.3,
-          ease: [0.25, 0.1, 0.25, 1],
-        }}
-        className="flex fixed z-[2] flex-col items-center 2xl:max-w-[1440px] w-full bg-center bg-[url('/images/welcome/MONTAIN.png')] bg-cover h-[700px]"
-      ></motion.div>
+      <div className="fixed z-[2] 2xl:max-w-[1440px] w-full overflow-hidden  h-[700px]">
+        <motion.div
+          initial={{ y: "150%" }}
+          animate={{ y: "0%" }}
+          transition={{
+            duration: 1.8,
+            delay: 2.3,
+            ease: [0.25, 0.1, 0.25, 1],
+          }}
+          className=" w-full h-full bg-center bg-[url('/images/welcome/MONTAIN.png')] bg-cover"
+        ></motion.div>
+      </div>
       {/* grass */}
       <div className="absolute top-[142px] z-[7] w-full">
         <motion.div
@@ -207,26 +204,28 @@ export default function Welcome() {
           delay: 2.7,
           ease: [0.25, 0.1, 0.25, 1],
         }}
-        className={`absolute z-[5] top-[127px] `}
+        className={`absolute z-[5] top-[127px] overflow-hidden`}
         onAnimationComplete={() => setIsAnimationComplete(true)}
         style={cloudLeftStyle}
       >
         <Image src={cloudleft} alt="cloudleft" />
       </motion.div>
 
-      <motion.div
-        initial={{ x: "150%" }}
-        animate={{ x: 0 }}
-        transition={{
-          duration: 1.5,
-          delay: 2.7,
-          ease: [0.25, 0.1, 0.25, 1],
-        }}
-        className="absolute z-[5] top-0"
-        style={cloudRightStyle}
-      >
-        <Image src={cloudright} alt="cloudright" />
-      </motion.div>
+      <div className="absolute z-[5] top-0 right-0 w-[550px] overflow-hidden">
+        <motion.div
+          initial={{ x: "150%" }}
+          animate={{ x: 0 }}
+          transition={{
+            duration: 1.5,
+            delay: 2.7,
+            ease: [0.25, 0.1, 0.25, 1],
+          }}
+          className="relative"
+          style={cloudRightStyle}
+        >
+          <Image src={cloudright} alt="cloudright" />
+        </motion.div>
+      </div>
     </section>
   );
 }

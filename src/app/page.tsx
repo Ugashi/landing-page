@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <ParallaxProvider>
-      <main className="w-full flex flex-col items-center ">
+      <main className="w-full flex flex-col items-center invis-scroll">
         {isVideoPlaying ? (
           <div className="w-full h-screen">
             <video

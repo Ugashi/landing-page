@@ -7,7 +7,7 @@ import UsagiWelcome from "../svgs/usagi-welcome";
 import cloudleft from "@/images/welcome/whitetree1.png";
 import cloudright from "@/images/welcome/whitetree2.png";
 import SocialLinks from "./social-links";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useParallax } from "react-scroll-parallax";
 
@@ -26,7 +26,6 @@ export default function Welcome({
     speed: 0,
   });
 
-  // const [isAnimationComplete, setIsAnimationComplete] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {

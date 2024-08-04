@@ -131,18 +131,20 @@ export default function Welcome({
   };
 
   return (
-    <section className="w-full flex  min-h-[944px] items-center justify-center 2xl:max-w-[1440px] bg-[#F4EBE4] relative">
+    <section className="w-full flex  min-h-[944px] items-center justify-center bg-[#F4EBE4] relative">
+      {" "}
+      {/* here */}
       {/* sunrise background */}
-
       <motion.div
         initial={{ opacity: 0.1 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 3, ease: "easeInOut" }}
         className={`w-full min-h-[944px] absolute top-0 left-0 bg-[url('/images/welcome-background.png')] bg-cover z-[1]`}
       ></motion.div>
-
       {/* mountain background */}
-      <div className="fixed z-[2] 2xl:max-w-[1440px] w-full overflow-hidden  h-[700px] top-0">
+      <div className="fixed z-[2]  w-full overflow-hidden  h-[700px] top-0">
+        {" "}
+        {/* here */}
         <motion.div
           initial={{ y: "190%" }}
           animate={{ y: "0%" }}
@@ -155,7 +157,7 @@ export default function Welcome({
         ></motion.div>
       </div>
       {/* grass */}
-      <div className="absolute top-[142px] z-[7] w-full">
+      <div className="absolute top-[142px] z-[7] w-full flex flex-col items-center">
         <motion.div
           initial={{ y: "150%" }}
           animate={{ y: "0%" }}
@@ -167,7 +169,7 @@ export default function Welcome({
           className="w-full bg-[url('/images/welcome/grass.png')] bg-cover bg-center h-[700px]"
         ></motion.div>
         {/* welcome text */}
-        <div className="w-full h-[251.616px] bg-transparent mt-[-1px] pt-[84.69px]">
+        <div className="w-full 2xl:max-w-[1440px] h-[251.616px] bg-transparent mt-[-1px] pt-[84.69px]">
           <p className="ml-[120px] max-w-[692px] text-[24px] leading-7 text-[#EADACB] font-nuku">
             Welcome to Usagi, the meme coin inspired by the playful and
             adventurous spirit of rabbits! Usagi is more than just a
@@ -177,13 +179,11 @@ export default function Welcome({
           </p>
         </div>
       </div>
-
       {/* social links */}
       <SocialLinks
         isAnimationComplete={isAnimationComplete}
         scrollPosition={scrollPosition}
       />
-
       {/* logo */}
       <motion.div
         initial={{ y: "-150%" }}
@@ -198,7 +198,6 @@ export default function Welcome({
       >
         <Image src={logo} alt="logo" />
       </motion.div>
-
       {/* main bunny */}
       <div className="absolute z-[4] top-[189px]" ref={parallax.ref}>
         {!isAnimationComplete ? (
@@ -221,7 +220,6 @@ export default function Welcome({
           </div>
         )}
       </div>
-
       {/* usagi */}
       <motion.div
         initial={{ y: "270%" }}
@@ -235,9 +233,7 @@ export default function Welcome({
       >
         <UsagiWelcome />
       </motion.div>
-
       {/* petals */}
-
       <div className="absolute top-[86px] z-[8] w-full overflow-hidden 2xl:max-w-[1440px] h-[750px]">
         <motion.div
           variants={petalsVariants(2.3)}
@@ -257,7 +253,6 @@ export default function Welcome({
       >
         <Image src={cloudleft} alt="cloudleft" />
       </motion.div>
-
       <div className="absolute z-[5] top-0 right-0 w-[550px] overflow-hidden">
         <motion.div
           initial={isAnimationComplete ? "initialY" : "initialX"}

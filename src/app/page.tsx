@@ -49,31 +49,35 @@ export default function Home() {
             {isAnimationComplete && (
               <>
                 <UsagiStory />
-                <div
-                  className="relative z-[20] w-full 2xl:max-w-[1440px] flex flex-col items-center bg-[rgba(234,218,203,1)] 
+                <div className="w-full bg-[#fff] flex flex-col items-center relative z-[20]">
+                  <div
+                    className=" w-full 2xl:max-w-[1440px] flex flex-col items-center  bg-[rgba(234,218,203,1)]
             bg-[url('/images/background.png')] bg-opacity-[0.08] bg-blend-exclusion h-[2009px] bg-cover"
-                >
-                  <HowToBuy />
-                  <Communities />
-                  <License />
-                  <button
-                    className="w-[257.695px] h-[67.032px] flex items-center z-[30] justify-center right-[57px] bottom-[113px] 
-              absolute bg-[url('/images/license/backtop.png')] text-[24px] leading-8 font-bold
-              hover:scale-105 duration-200"
-                    onClick={scrollToTop}
                   >
-                    BACK TO TOP
-                  </button>
+                    <HowToBuy />
+                    <Communities />
+                    <License />
+                    <div className="w-full 2xl:max-w-[1440px] relative h-[400px] overflow-hidden">
+                      <button
+                        className="w-[257.695px] h-[67.032px] flex items-center z-[30] justify-center right-[57px] bottom-[113px] 
+                      absolute bg-[url('/images/license/backtop.png')] text-[24px] leading-8 font-bold
+                      hover:scale-105 duration-200"
+                        onClick={scrollToTop}
+                      >
+                        BACK TO TOP
+                      </button>
 
-                  <p className=" absolute uppercase text-[16px] leading-8 text-black font-bold right-[57px] bottom-[211px]">
-                    © 2024 by Sei Usagi. All rights reserved!
-                  </p>
+                      <p className=" absolute uppercase text-[16px] leading-8 text-black font-bold right-[57px] bottom-[211px]">
+                        © 2024 by Sei Usagi. All rights reserved!
+                      </p>
 
-                  <div className="absolute bottom-0  left-0">
-                    <Image src={usaleft} alt="usaright" />
-                  </div>
-                  <div className="absolute bottom-0  right-0">
-                    <Image src={usaright} alt="usaright" />
+                      <div className="absolute top-0  left-0">
+                        <Image src={usaleft} alt="usaright" />
+                      </div>
+                      <div className="absolute bottom-0  right-0">
+                        <Image src={usaright} alt="usaright" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </>

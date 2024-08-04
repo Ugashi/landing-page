@@ -31,65 +31,17 @@ export default function UsagiStory() {
           </p>
           <div className="mt-8 text-[16px] leading-[24px] tracking-[-0.32px] text-black max-h-[381px] overflow-y-scroll invis-scroll">
             <p>
-              Once upon a time, In the heart of an ancient jungle, the
-              legendary, Sei Usagi, moved with unmatched grace. Clad in a red
-              kimono, he wielded his katanas with swift precision. Once a loyal
-              samurai, disillusioned by endless wars, Usagi chose a path of
-              solitude, vowing to protect the innocent.
-            </p>
-            <br />
-            <p>
-              One evening, Usagi found a village at the jungle&apos;s edge,
-              gripped by fear. A young girl tearfully revealed that bandits had
-              kidnapped her brother. Usagi, determined to help, ventured into
-              the forest. He swiftly defeated the bandits, his movements a blur,
-              and rescued the girl&apos;s brother.
-            </p>
-            <br />
-            <p>
-              The villagers, grateful and awestruck, thanked Usagi. &quot;I do
-              what must be done,&quot; he replied simply, before disappearing
-              into the forest. Usagi continued his solitary journey, a beacon
-              of hope in a dark world. His legend grew, a timeless tale of
-              bravery and justice. The Sei Usagi&apos;s story became part of the
-              jungle, inspiring those who heard it.
-            </p>
-            <br />
-            <p>
-              Back to 23rd century, in the relentless crypto-finance market, the
-              Sei Usagi embodies a trader&apos;s spirit. He navigates the
-              volatile highs and crushing lows with the same grace he displayed
-              in battle. The market&apos;s twists and turns are akin to the
-              jungle&apos;s dangers, yet Sei Usagi remains fast and composed,
-              executing trades with unparalleled speed and precision.
-            </p>
-            <br />
-            <p>
-              Sei Usagi&apos;s journey through the financial jungle mirrors his
-              past. The exhilarating victories, when his decisions yield
-              significant gains, feel like vanquishing the bandits. The crushing
-              losses, akin to watching empires crumble, test his resilience.
-              Yet, he remains unshaken, learning from each experience, ever
-              faster and more insightful.
-            </p>
-            <br />
-            <p>
-              One day, the market plummeted, reminiscent of a sudden ambush.
-              Traders panicked, much like the fearful villagers. Amidst the
-              chaos, Sei Usagi stayed calm. He analyzed the market&apos;s
-              patterns, identifying an opportunity. With swift precision, he
-              made his move, capitalizing on the downturn. His actions brought
-              stability, much like his rescue of the girl&apos;s brother,
-              restoring hope among his peers.
-            </p>
-            <br />
-            <p>
-              As dawn broke, Sei Usagi prepared for another day in the market.
-              The financial jungle, with its endless mysteries and hidden
-              dangers, called to him. He had witnessed the rise and fall of
-              countless trends, but his mission remained unchanged. He would
-              navigate the market, protect his investments, and ensure his
-              strategy prevailed, no matter how tumultuous the journey.
+              In the ever-changing world of cryptocurrency, Usagi, the swift and
+              cunning samurai rabbit, stands as a guardian of profit. As the
+              market moves rapidly, with new narratives emerging every day,
+              Usagi guides users through the chaos, helping them seize
+              profitable opportunities. His extraordinary speed symbolizes the
+              Sei blockchain, the fastest Layer 1 network, ensuring swift and
+              reliable transactions. Usagi&apos;s mission is to be a steadfast
+              companion, providing stability and confidence as users navigate
+              the volatile market. With his guidance, traders can transform
+              uncertainty into opportunity, making Usagi an indispensable ally
+              in their journey
             </p>
           </div>
         </div>

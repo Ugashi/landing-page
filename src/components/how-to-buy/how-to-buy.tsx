@@ -44,7 +44,14 @@ export default function HowToBuy() {
               <p className="text-[20px] leading-6 tracking-[-0.4px] font-medium">
                 0x5f0E07dFeE5832Faa00c63F2D33A0D79150E8598
               </p>
-              <button className="p-2 bg-[#EADACB] rounded-lg">
+              <button
+                className="p-2 bg-[#EADACB] rounded-lg"
+                onClick={() => {
+                  navigator.clipboard.writeText(
+                    "0x5f0E07dFeE5832Faa00c63F2D33A0D79150E8598"
+                  );
+                }}
+              >
                 <CopyIcons />
               </button>
             </div>

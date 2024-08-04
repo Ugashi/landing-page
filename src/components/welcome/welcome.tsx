@@ -11,7 +11,13 @@ import { delay, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useParallax } from "react-scroll-parallax";
 
-export default function Welcome() {
+export default function Welcome({
+  isAnimationComplete,
+  setIsAnimationComplete,
+}: {
+  isAnimationComplete: boolean;
+  setIsAnimationComplete: any;
+}) {
   const parallax: any = useParallax({
     speed: -20,
   });
@@ -20,7 +26,7 @@ export default function Welcome() {
     speed: 0,
   });
 
-  const [isAnimationComplete, setIsAnimationComplete] = useState(false);
+  // const [isAnimationComplete, setIsAnimationComplete] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {

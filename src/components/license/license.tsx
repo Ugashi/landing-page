@@ -3,7 +3,7 @@ import bunny from "@/images/license/bunny.png";
 
 export default function License() {
   return (
-    <div className="relative w-full mt-[120px]">
+    <div className="relative w-full mt-[120px] z-[30]">
       <p className=" ml-[120px] uppercase text-[24px] leading-8 font-bold">
         NFT License agreement
       </p>

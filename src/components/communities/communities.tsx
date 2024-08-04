@@ -79,7 +79,7 @@ export default function Communities() {
                 href={community.link}
                 className=" w-[308px] bg-[#9D2117] rounded-[4px] px-6 py-4 flex left-[70px] bottom-[90px]
                   text-white font-nuku text-[24px] leading-7 items-center justify-center absolute z-[12]
-                  "
+                  hover:scale-105 transition-all duration-200"
               >
                 JOIN
               </Link>

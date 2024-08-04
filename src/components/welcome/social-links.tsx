@@ -48,7 +48,7 @@ export default function SocialLinks({
             style={cloudRightStyle(index * scrollPosition * 0.08)}
           >
             <Link
-              className="size-[70px] flex items-center justify-center bg-[url('/images/welcome/outerIcon.png')] "
+              className="size-[70px] flex items-center justify-center bg-[url('/images/welcome/outerIcon.png')] hover:scale-105 duration-200 transition-all"
               href={social.link}
             >
               <div

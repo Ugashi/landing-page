@@ -45,7 +45,7 @@ export default function HowToBuy() {
                 0x5f0E07dFeE5832Faa00c63F2D33A0D79150E8598
               </p>
               <button
-                className="p-2 bg-[#EADACB] rounded-lg"
+                className="p-2 bg-[#EADACB] rounded-lg hover:scale-105 transition-all duration-200"
                 onClick={() => {
                   navigator.clipboard.writeText(
                     "0x5f0E07dFeE5832Faa00c63F2D33A0D79150E8598"

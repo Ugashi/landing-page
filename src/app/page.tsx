@@ -16,11 +16,18 @@ export default function Home() {
     setIsVideoPlaying(false);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <ParallaxProvider>
       <main className="w-full flex flex-col items-center invis-scroll">
         {isVideoPlaying ? (
-          <div className="w-full h-screen">
+          <div className="w-full h-screen ">
             <video
               className="w-full h-full object-cover"
               autoPlay
@@ -46,6 +53,7 @@ export default function Home() {
                 className="w-[257.695px] h-[67.032px] flex items-center z-[30] justify-center right-[57px] bottom-[113px] 
               absolute bg-[url('/images/license/backtop.png')] text-[24px] leading-8 font-bold
               hover:scale-105 duration-200"
+                onClick={scrollToTop}
               >
                 BACK TO TOP
               </button>

@@ -126,14 +126,14 @@ export default function Welcome() {
   };
 
   return (
-    <section className="w-full flex h-screen items-center justify-center 2xl:max-w-[1440px] bg-[#F4EBE4] relative">
+    <section className="w-full flex  min-h-[944px] items-center justify-center 2xl:max-w-[1440px] bg-[#F4EBE4] relative">
       {/* sunrise background */}
 
       <motion.div
         initial={{ opacity: 0.1 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 3, ease: "easeInOut" }}
-        className={`w-full h-screen absolute top-0 left-0 bg-[url('/images/welcome-background.png')] bg-cover z-[1]`}
+        className={`w-full min-h-[944px] absolute top-0 left-0 bg-[url('/images/welcome-background.png')] bg-cover z-[1]`}
       ></motion.div>
 
       {/* mountain background */}

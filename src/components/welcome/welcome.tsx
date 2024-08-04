@@ -7,7 +7,7 @@ import UsagiWelcome from "../svgs/usagi-welcome";
 import cloudleft from "@/images/welcome/whitetree1.png";
 import cloudright from "@/images/welcome/whitetree2.png";
 import SocialLinks from "./social-links";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useParallax } from "react-scroll-parallax";
 
@@ -23,23 +23,14 @@ export default function Welcome() {
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
 
-  // useEffect(() => {
-  //   // Disable scroll
-  //   document.body.style.maxHeight = "100vh";
-  //   document.body.style.overflow = "hidden";
-
-  //   return () => {
-  //     // Re-enable scroll when component unmounts
-  //     document.body.style.overflowY = "scroll";
-  //   };
-  // }, []);
-
   useEffect(() => {
     const handleScroll = (event: Event) => {
       setScrollPosition(window.scrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
+
+    console.log("isAnimationComplete", isAnimationComplete);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -80,6 +71,60 @@ export default function Welcome() {
     };
   };
 
+  const cloudLeftVariants = {
+    initialX: { x: "-150%" },
+    initialY: { y: 0, x: 0 },
+    animate: {
+      x: 0,
+      transition: {
+        x: {
+          duration: 1.5,
+          delay: 2.7,
+          ease: [0.25, 0.1, 0.25, 1],
+        },
+      },
+    },
+    upAndDown: {
+      y: [0, -20, 0],
+      transition: {
+        y: {
+          duration: 2,
+          repeat: Infinity,
+          repeatType: "reverse",
+          ease: "easeInOut",
+          delay: 0,
+        },
+      },
+    },
+  };
+
+  const cloudRightVariants = {
+    initialX: { x: "150%" },
+    initialY: { y: 0, x: 0 },
+    animate: {
+      x: 0,
+      transition: {
+        x: {
+          duration: 1.5,
+          delay: 2.7,
+          ease: [0.25, 0.1, 0.25, 1],
+        },
+      },
+    },
+    upAndDown: {
+      y: [0, -20, 0],
+      transition: {
+        y: {
+          duration: 2,
+          repeat: Infinity,
+          repeatType: "reverse",
+          ease: "easeInOut",
+          delay: 0,
+        },
+      },
+    },
+  };
+
   return (
     <section className="w-full flex h-screen items-center justify-center 2xl:max-w-[1440px] bg-[#F4EBE4] relative">
       {/* sunrise background */}
@@ -91,9 +136,9 @@ export default function Welcome() {
       ></motion.div>
 
       {/* mountain background */}
-      <div className="fixed z-[2] 2xl:max-w-[1440px] w-full overflow-hidden  h-[700px]">
+      <div className="fixed z-[2] 2xl:max-w-[1440px] w-full overflow-hidden  h-[700px] top-0">
         <motion.div
-          initial={{ y: "150%" }}
+          initial={{ y: "19%" }}
           animate={{ y: "0%" }}
           transition={{
             duration: 1.8,
@@ -109,7 +154,7 @@ export default function Welcome() {
           initial={{ y: "150%" }}
           animate={{ y: "0%" }}
           transition={{
-            duration: 2.3,
+            duration: 2.1,
             delay: 2,
             ease: [0.25, 0.1, 0.25, 1],
           }}
@@ -159,6 +204,7 @@ export default function Welcome() {
               delay: 2.4,
               ease: [0.25, 0.1, 0.25, 1],
             }}
+            onAnimationComplete={() => setIsAnimationComplete(true)}
             className=" "
           >
             <Image src={bunny} alt="bunny" />
@@ -197,15 +243,10 @@ export default function Welcome() {
       </div>
       {/* clouds */}
       <motion.div
-        initial={{ x: "-150%" }}
-        animate={{ x: 0 }}
-        transition={{
-          duration: 1.5,
-          delay: 2.7,
-          ease: [0.25, 0.1, 0.25, 1],
-        }}
-        className={`absolute z-[5] top-[127px] overflow-hidden`}
-        onAnimationComplete={() => setIsAnimationComplete(true)}
+        initial={isAnimationComplete ? "initialY" : "initialX"}
+        animate={isAnimationComplete ? "upAndDown" : "animate"}
+        variants={cloudLeftVariants}
+        className="absolute z-[5] top-[127px] overflow-hidden"
         style={cloudLeftStyle}
       >
         <Image src={cloudleft} alt="cloudleft" />
@@ -213,13 +254,9 @@ export default function Welcome() {
 
       <div className="absolute z-[5] top-0 right-0 w-[550px] overflow-hidden">
         <motion.div
-          initial={{ x: "150%" }}
-          animate={{ x: 0 }}
-          transition={{
-            duration: 1.5,
-            delay: 2.7,
-            ease: [0.25, 0.1, 0.25, 1],
-          }}
+          initial={isAnimationComplete ? "initialY" : "initialX"}
+          animate={isAnimationComplete ? "upAndDown" : "animate"}
+          variants={cloudRightVariants}
           className="relative"
           style={cloudRightStyle}
         >

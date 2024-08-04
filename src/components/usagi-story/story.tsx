@@ -56,29 +56,29 @@ export default function UsagiStory() {
           <br />
           <p>
             Back to 23rd century, in the relentless crypto-finance market, the
-            Sei Usagi embodies a trader's spirit. He navigates the volatile
+            Sei Usagi embodies a trader&apos;s spirit. He navigates the volatile
             highs and crushing lows with the same grace he displayed in battle.
-            The market's twists and turns are akin to the jungle's dangers, yet
-            Sei Usagi remains fast and composed, executing trades with
-            unparalleled speed and precision.
+            The market&apos;s twists and turns are akin to the jungle&apos;s
+            dangers, yet Sei Usagi remains fast and composed, executing trades
+            with unparalleled speed and precision.
           </p>
           <br />
           <p>
-            Sei Usagi's journey through the financial jungle mirrors his past.
-            The exhilarating victories, when his decisions yield significant
-            gains, feel like vanquishing the bandits. The crushing losses, akin
-            to watching empires crumble, test his resilience. Yet, he remains
-            unshaken, learning from each experience, ever faster and more
-            insightful.
+            Sei Usagi&apos;s journey through the financial jungle mirrors his
+            past. The exhilarating victories, when his decisions yield
+            significant gains, feel like vanquishing the bandits. The crushing
+            losses, akin to watching empires crumble, test his resilience. Yet,
+            he remains unshaken, learning from each experience, ever faster and
+            more insightful.
           </p>
           <br />
           <p>
             One day, the market plummeted, reminiscent of a sudden ambush.
             Traders panicked, much like the fearful villagers. Amidst the chaos,
-            Sei Usagi stayed calm. He analyzed the market's patterns,
+            Sei Usagi stayed calm. He analyzed the market&apos;s patterns,
             identifying an opportunity. With swift precision, he made his move,
             capitalizing on the downturn. His actions brought stability, much
-            like his rescue of the girl's brother, restoring hope among his
+            like his rescue of the girl&apos;s brother, restoring hope among his
             peers.
           </p>
           <br />

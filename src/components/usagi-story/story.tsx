@@ -8,8 +8,8 @@ export default function UsagiStory() {
     <div className="w-full bg-white flex flex-col items-center relative z-[4]">
       {/* half black decorator */}
       <div className="w-full h-[124.69px] mt-[-114px] bg-[#161616]"></div>
-      <section className="relative h-[1316px] w-full bg-[#FFF] 2xl:max-w-[1440px] flex flex-col items-center overflow-hidden z-[4]">
-        <div className=" relative w-full h-[352.4px] bg-[url('/images/story/vector.png')] bg-cover"></div>
+      <section className="relative h-[1316px] w-full bg-[#FFF] flex flex-col items-center overflow-hidden z-[4]">
+        <div className=" relative w-full h-[467px] bg-[url('/images/story/vector.png')] bg-cover"></div>
 
         {/* usagi text background decorator  */}
         <div className="absolute top-[72px] right-[-40px] w-[627px]">
@@ -41,7 +41,7 @@ export default function UsagiStory() {
             <p>
               One evening, Usagi found a village at the jungle&apos;s edge,
               gripped by fear. A young girl tearfully revealed that bandits had
-              kidnapped her brother. Hayate, determined to help, ventured into
+              kidnapped her brother. Usagi, determined to help, ventured into
               the forest. He swiftly defeated the bandits, his movements a blur,
               and rescued the girl&apos;s brother.
             </p>

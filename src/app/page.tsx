@@ -57,7 +57,7 @@ export default function Home() {
                     <HowToBuy />
                     <Communities />
                     <License />
-                    <div className="w-full 2xl:max-w-[1440px] relative h-[400px] overflow-hidden">
+                    <div className="w-full 2xl:max-w-[1440px] relative h-[600px] overflow-hidden">
                       <button
                         className="w-[257.695px] h-[67.032px] flex items-center z-[30] justify-center right-[57px] bottom-[113px] 
                       absolute bg-[url('/images/license/backtop.png')] text-[24px] leading-8 font-bold
@@ -71,10 +71,10 @@ export default function Home() {
                         © 2024 by Sei Usagi. All rights reserved!
                       </p>
 
-                      <div className="absolute top-0  left-0">
+                      <div className="absolute bottom-0 left-0">
                         <Image src={usaleft} alt="usaright" />
                       </div>
-                      <div className="absolute bottom-0  right-0">
+                      <div className="absolute bottom-[0px]  right-0">
                         <Image src={usaright} alt="usaright" />
                       </div>
                     </div>

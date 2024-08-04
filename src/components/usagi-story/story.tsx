@@ -49,7 +49,7 @@ export default function UsagiStory() {
             <p>
               The villagers, grateful and awestruck, thanked Usagi. &quot;I do
               what must be done,&quot; he replied simply, before disappearing
-              into the forest. Hayate continued his solitary journey, a beacon
+              into the forest. Usagi continued his solitary journey, a beacon
               of hope in a dark world. His legend grew, a timeless tale of
               bravery and justice. The Sei Usagi&apos;s story became part of the
               jungle, inspiring those who heard it.

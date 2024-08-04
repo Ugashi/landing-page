@@ -4,11 +4,11 @@ import CopyIcons from "../svgs/copy-icons";
 import decorator from "@/images/howto/decorator.png";
 
 const START_GUIDE = [
-  "Add USAGI network to your Metamask wallet",
+  "Add $SEI network to your Metamask wallet",
   "Import token to your wallet",
-  "Link your EVM address to your USAGI address",
+  "Link your EVM address to your $SEI address",
   "It's important to link your address before interacting with any dApps! link here",
-  "Swap Fiat or Crypto for $USAGI",
+  "Swap Fiat or Crypto for $SEI",
   "Buy through our partners at Uniswap",
 ];
 
@@ -31,7 +31,7 @@ export default function HowToBuy() {
           {/* USAGI CA */}
           <div className="w-full">
             <p className="mb-4 text-[24px] leading-8 tracking-[-0.48px] font-bold">
-              USAGI CA:
+              $USA CA:
             </p>
             <div className="flex items-center gap-5 px-4 py-3 relative z-[2]">
               <Image
@@ -59,7 +59,7 @@ export default function HowToBuy() {
           {/* steps */}
           <div className="w-full">
             <p className="mb-4 text-[24px] leading-8 font-bold tracking-[-0.48px]">
-              Getting Started on USAGI:
+              Getting Started on $SEI:
             </p>
             <div className="flex flex-col w-full items-start justify-start text-[20px] leading-7 tracking-[-0.4px] font-medium gap-0">
               {START_GUIDE.map((item, index) => {

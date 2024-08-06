@@ -9,7 +9,7 @@ const START_GUIDE = [
   "Import token to your wallet",
   "Link your EVM address to your $SEI address",
   <p key={"guide link"}>
-    "It's important to link your address before interacting with any dApps!
+    It&apos;s important to link your address before interacting with any dApps!
     <Link
       href="https://app.sei.io/"
       rel="noopener noreferrer"

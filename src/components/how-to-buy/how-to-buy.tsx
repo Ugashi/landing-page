@@ -2,14 +2,25 @@ import bluebuny from "@/images/howto/mainimage.png";
 import Image from "next/image";
 import CopyIcons from "../svgs/copy-icons";
 import decorator from "@/images/howto/decorator.png";
+import Link from "next/link";
 
 const START_GUIDE = [
   "Add $SEI network to your Metamask wallet",
   "Import token to your wallet",
   "Link your EVM address to your $SEI address",
-  "It's important to link your address before interacting with any dApps! link here",
+  <p key={"guide link"}>
+    "It's important to link your address before interacting with any dApps!
+    <Link
+      href="https://app.sei.io/"
+      rel="noopener noreferrer"
+      target="_blank"
+      className="ml-1 hover:text-blue-600 hover:underline transition-all duration-200 hover:scale-105"
+    >
+      Link here
+    </Link>
+  </p>,
   "Swap Fiat or Crypto for $SEI",
-  "Buy through our partners at Uniswap",
+  "Buy through our partners at DragonSwap",
 ];
 
 export default function HowToBuy() {
@@ -42,13 +53,13 @@ export default function HowToBuy() {
               />
               {/* address */}
               <p className="text-[20px] leading-6 tracking-[-0.4px] font-medium">
-                0x5f0E07dFeE5832Faa00c63F2D33A0D79150E8598
+                0x5c85726f71aFB7e26d769fB559Ce0168CE1F8f4E
               </p>
               <button
                 className="p-2 bg-[#EADACB] rounded-lg hover:scale-105 transition-all duration-200"
                 onClick={() => {
                   navigator.clipboard.writeText(
-                    "0x5f0E07dFeE5832Faa00c63F2D33A0D79150E8598"
+                    "0x5c85726f71aFB7e26d769fB559Ce0168CE1F8f4E"
                   );
                 }}
               >

@@ -1,19 +1,15 @@
 import { motion } from "framer-motion";
-import { XIcon, DiscordIcon, TelegramIcon } from "../svgs/social-icons";
+import { XIcon, TelegramIcon } from "../svgs/social-icons";
 import Link from "next/link";
 
 const SOCIAL_LINKS = [
   {
-    link: "/",
+    link: "https://x.com/SeiUsagi_io",
     icon: XIcon,
   },
   {
-    link: "/",
+    link: "https://t.me/seiusagi",
     icon: TelegramIcon,
-  },
-  {
-    link: "/",
-    icon: DiscordIcon,
   },
 ];
 
@@ -50,6 +46,8 @@ export default function SocialLinks({
             <Link
               className="size-[70px] flex items-center justify-center bg-[url('/images/welcome/outerIcon.png')] hover:scale-105 duration-200 transition-all"
               href={social.link}
+              rel="noopener noreferrer"
+              target="_blank"
             >
               <div
                 className={`size-[60px] overflow-hidden ${

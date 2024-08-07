@@ -6,13 +6,15 @@ import Link from "next/link";
 import soon from "@/images/community/soon.png";
 import discordicon from "@/images/community/disordicon.png";
 import xicon from "@/images/community/xicon.png";
+import tele from "@/images/community/tele.png";
+import teleicon from "@/images/community/teleicon.png";
 const COMMUNITY_INFO = [
   {
-    title: "Join our Discord!",
+    title: "Join our Telegram!",
     img: discord,
     des: "Where you can chat with other SEIYANs, earn money making memes, and likely lose braincells in the process.",
-    link: "https://x.com/SeiUsagi_io",
-    icon: discordicon,
+    link: "https://t.me/seiusagi",
+    icon: teleicon,
   },
   {
     title: "Follow on Twitter!",
@@ -22,11 +24,11 @@ const COMMUNITY_INFO = [
     des: "Where we post our best SEIYAN memes and scream AAAAAA pretty regularly.",
   },
   {
-    title: "Comming soon",
-    img: x,
+    title: "Join our Telegram!",
+    img: tele,
     des: "Where we post our best SEIYAN memes and scream AAAAAA pretty regularly.",
-    link: "/",
-    icon: xicon,
+    link: "https://t.me/seiusagi",
+    icon: teleicon,
   },
 ];
 
@@ -46,36 +48,30 @@ export default function Communities() {
             >
               {/* community thumbnail */}
               <Image src={communitycard} alt="community card" width={443} />
-              {index !== 2 && (
-                <Image
-                  src={community.icon}
-                  alt="discord"
-                  className="absolute z-[30] left-1/2 -translate-x-1/2 top-[170.87px] bg-blend-saturation mix-blend-difference -translate-y-1/2"
-                />
-              )}
-              {index === 2 && (
-                <>
-                  <Image
-                    src={soon}
-                    alt="soon"
-                    className="absolute z-[30] left-[45.03px] top-[33.87px]"
-                  />
-                  <p className="top-1/2 left-1/2 font-nuku text-[40px] absolute z-[35] leading-[48px] text-white -translate-x-1/2 -translate-y-1/2 max-w-[133px]">
-                    COMING SOON!!!
-                  </p>
-                </>
-              )}
+
+              {/* thumnail app icon */}
+              <Image
+                src={community.icon}
+                alt="discord"
+                className="absolute z-[30] left-1/2 -translate-x-1/2 top-[170.87px] bg-blend-saturation mix-blend-difference -translate-y-1/2"
+              />
+
               <div className="absolute z-[11] left-[53.03px] top-[39.87px]">
+                {/* thumnail background */}
                 <Image src={community.img} alt="discord" />
 
+                {/* community title */}
                 <div className="mt-[30px] ml-[22px] text-[24px] leading-7 font-nuku">
                   {community.title}
                 </div>
+                {/* community description */}
                 <div className="mt-2 ml-[22px] max-w-[308px] text-[14px] leading-5">
                   {community.des}
                 </div>
               </div>
               <Link
+                rel="noopener noreferrer"
+                target="_blank"
                 href={community.link}
                 className=" w-[308px] bg-[#9D2117] rounded-[4px] px-6 py-4 flex left-[70px] bottom-[90px]
                   text-white font-nuku text-[24px] leading-7 items-center justify-center absolute z-[12]

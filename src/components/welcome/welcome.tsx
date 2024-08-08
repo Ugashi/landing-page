@@ -171,11 +171,11 @@ export default function Welcome({
         {/* welcome text */}
         <div className="w-full 2xl:max-w-[1440px] h-[251.616px] bg-transparent mt-[-1px] pt-[84.69px]">
           <p className="ml-[120px] max-w-[692px] text-[24px] leading-7 text-[#EADACB] font-nuku">
-            Welcome to Usagi, the meme coin inspired by the playful and
-            adventurous spirit of rabbits! Usagi is more than just a
-            cryptocurrency; it&apos;s a community-driven project that combines
-            the fun of memes with the innovative world of decentralized finance
-            (DeFi).
+            Welcome to Sei Usagi - The Fastest Memecoin on the Fastest
+            Blockchain! Usagi is a community-driven project, offering
+            unparalleled speed and numerous airdrops to the Sei community. Join
+            us now and be part of the fastest-growing, most rewarding adventure
+            in the crypto world!
           </p>
         </div>
       </div>

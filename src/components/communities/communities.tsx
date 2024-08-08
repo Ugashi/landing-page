@@ -11,7 +11,7 @@ import teleicon from "@/images/community/teleicon.png";
 const COMMUNITY_INFO = [
   {
     title: "Join our Telegram!",
-    img: discord,
+    img: tele,
     des: "Where you can chat with other SEIYANs, earn money making memes, and likely lose braincells in the process.",
     link: "https://t.me/seiusagi",
     icon: teleicon,
@@ -24,11 +24,11 @@ const COMMUNITY_INFO = [
     des: "Where we post our best SEIYAN memes and scream AAAAAA pretty regularly.",
   },
   {
-    title: "Join our Telegram!",
-    img: tele,
+    title: "Join our Discord!",
+    img: discord,
     des: "Where we post our best SEIYAN memes and scream AAAAAA pretty regularly.",
     link: "https://t.me/seiusagi",
-    icon: teleicon,
+    icon: discordicon,
   },
 ];
 
@@ -50,11 +50,26 @@ export default function Communities() {
               <Image src={communitycard} alt="community card" width={443} />
 
               {/* thumnail app icon */}
-              <Image
-                src={community.icon}
-                alt="discord"
-                className="absolute z-[30] left-1/2 -translate-x-1/2 top-[170.87px] bg-blend-saturation mix-blend-difference -translate-y-1/2"
-              />
+              <Image src={communitycard} alt="community card" width={443} />
+              {index !== 2 && (
+                <Image
+                  src={community.icon}
+                  alt="discord"
+                  className="absolute z-[30] left-1/2 -translate-x-1/2 top-[170.87px] bg-blend-saturation mix-blend-difference -translate-y-1/2"
+                />
+              )}
+              {index === 2 && (
+                <>
+                  <Image
+                    src={soon}
+                    alt="soon"
+                    className="absolute z-[30] left-[45.03px] top-[33.87px]"
+                  />
+                  <p className="top-1/2 left-1/2 font-nuku text-[40px] absolute z-[35] leading-[48px] text-white -translate-x-1/2 -translate-y-1/2 max-w-[133px]">
+                    COMING SOON!!!
+                  </p>
+                </>
+              )}
 
               <div className="absolute z-[11] left-[53.03px] top-[39.87px]">
                 {/* thumnail background */}

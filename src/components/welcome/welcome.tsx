@@ -15,8 +15,8 @@ export default function Welcome({
   isAnimationComplete,
   setIsAnimationComplete,
 }: {
-  isAnimationComplete: boolean;
-  setIsAnimationComplete: any;
+  readonly isAnimationComplete: boolean;
+  readonly setIsAnimationComplete: any;
 }) {
   const parallax: any = useParallax({
     speed: -20,
